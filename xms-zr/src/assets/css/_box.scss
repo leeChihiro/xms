@@ -1,0 +1,15 @@
+// 样式微调 1~5 10 ... 25 35 ... 75
+@for $i from 1 through 15 {
+  $i: if($i>5, if($i>10, ($i - 10) * 10 + 25, ($i - 5) * 5), $i);
+
+  @each $box in map-keys($boxs) {
+    @each $pos in map-keys($poss) {
+      .#{$box}#{$pos}#{$i} {
+        #{changeShortToLong($box)}-#{changeShortToLong($pos)}: #{$i}px;
+      }
+    }
+    .#{$box}#{$i} {
+      #{changeShortToLong($box)}: #{$i}px;
+    }
+  }
+}

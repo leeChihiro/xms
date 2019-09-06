@@ -1,0 +1,66 @@
+// 初始化
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+// 自定义
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: #fa7e3e;
+}
+// 标题取消加粗 标题行内
+h1,h2,h3,h4,h5,h6{
+  display: inline;
+  font-weight: 400;
+}
+// 网页大小
+.w980 {
+  display: block;
+  width: 980px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+// 图片基于底部对齐
+img {
+  vertical-align: bottom;
+}

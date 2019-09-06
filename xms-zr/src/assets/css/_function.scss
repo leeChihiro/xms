@@ -1,0 +1,5 @@
+// 类名简写转为css支持的
+@function changeShortToLong($short) {
+  $all: map-merge($boxs, $poss);
+  @return if(map-has-key($all,$short), map-get($all,$short),"");
+}
